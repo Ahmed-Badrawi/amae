@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products Catalogue | amae — Everyday & Business Sourcing</title>
+  <meta name="description" content="Discover products for personal and business needs through AMAE. Verified categories, specifications, wholesale options, and commercial quotations." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet & Products Specific Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products-style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-market">
+        <span class="pulse-dot"></span>
+        <span>Commercial Catalogue: Verified for Sale &amp; Enterprise Procurement</span>
+      </div>
+      <div class="topbar-links">
+        <a href="index.html#trade">Commercial Agency</a>
+        <a href="index.html#suppliers">Supplier Portal</a>
+        <a href="index.html#contact">Commercial Desk</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="amae Home">
+        <span class="logo-text">amae</span>
+        <span class="logo-sub">Almassriya Alemaratiya</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="index.html#solutions" class="nav-link">Business Solutions</a></li>
+          <li><a href="index.html#sourcing" class="nav-link">Wholesale</a></li>
+          <li><a href="index.html#suppliers" class="nav-link">Suppliers</a></li>
+          <li><a href="index.html#trade" class="nav-link">Trade Services</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <button class="btn btn-primary" id="openMobileQuoteBtn">Request Quotation</button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-gold nav-action-btn" id="openNavQuoteBtn">Request a Quote</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-grid-pattern"></div>
+      <div class="container products-hero-container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span class="current">Products Catalogue</span>
+        </div>
+
+        <span class="section-tag light">Commercial Portfolio</span>
+        <h1 class="products-hero-title">Discover Products for Everyday and Business Needs</h1>
+        <p class="products-hero-lead">
+          Explore the products available through AMAE. Browse by category, review product details, and choose the purchasing option that suits your needs.
+        </p>
+
+        <div class="products-hero-action">
+          <a href="#catalogueSection" class="btn btn-gold">Browse All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Availability Bar (Policy & Confirmation Notice) -->
+    <aside class="availability-bar">
+      <div class="container availability-inner">
+        <div class="availability-info">
+          <div class="availability-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          </div>
+          <div>
+            <strong>Product Availability &amp; Commercial Terms:</strong>
+            <span>Product availability, prices, delivery options, and applicable commercial terms are subject to confirmation at the time of purchase or quotation.</span>
+          </div>
+        </div>
+        <button class="btn btn-outline-dark btn-small" id="contactProductBtn">Contact Us About a Product</button>
+      </div>
+    </aside>
+
+    <!-- Main Catalogue Layout (Categories + Filters + Products Grid) -->
+    <section class="section catalogue-section" id="catalogueSection">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header-flex">
+          <div>
+            <span class="section-tag">Verified Catalogues</span>
+            <h2 class="section-title">Product Categories</h2>
+            <p class="section-desc">Explore our available product categories to find products relevant to your personal or business requirements.</p>
+          </div>
+          <div class="compliance-pill">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Approved for Publication &amp; Wholesale Enquiry</span>
+          </div>
+        </div>
+
+        <!-- Find the Right Product: Search & Interactive Filter Controls -->
+        <div class="filter-panel-card">
+          <div class="filter-headline">
+            <div class="filter-title-box">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+              <h3>Find the Right Product</h3>
+            </div>
+            <p>Use the available filters to narrow your search by category, brand, product type, or other specifications where supported.</p>
+          </div>
+
+          <div class="filter-controls-grid">
+            <!-- Search Input -->
+            <div class="filter-search-wrap">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" id="productSearchInput" placeholder="Search by product name, specification, or keyword..." />
+            </div>
+
+            <!-- Category Selector -->
+            <div class="filter-select-wrap">
+              <label for="categoryFilter">Category</label>
+              <select id="categoryFilter">
+                <option value="all">All Available Categories</option>
+                <option value="beauty">Beauty &amp; Fragrance</option>
+                <option value="electronics">Electronics &amp; Accessories</option>
+              </select>
+            </div>
+
+            <!-- Purchasing Type -->
+            <div class="filter-select-wrap">
+              <label for="purchasingType">Purchasing Type</label>
+              <select id="purchasingType">
+                <option value="all">Individual &amp; Wholesale</option>
+                <option value="b2b">Wholesale / B2B Ready</option>
+                <option value="retail">Direct Purchase</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Active Filter Chips -->
+          <div class="category-tabs">
+            <button class="tab-chip active" data-filter="all">All Products</button>
+            <button class="tab-chip" data-filter="beauty">Beauty &amp; Fragrance</button>
+            <button class="tab-chip" data-filter="electronics">Electronics &amp; Accessories</button>
+          </div>
+        </div>
+
+        <!-- Product Information: Catalog Grid -->
+        <div class="products-grid" id="productsGrid">
+          
+          <!-- Product Card 1 -->
+          <article class="product-item" data-category="beauty" data-type="both">
+            <div class="product-image-box">
+              <div class="product-status-tag">In Stock • Confirmed</div>
+              <div class="product-img-bg img-fragrance-1">
+                <span class="product-sku">AMAE-BTY-01</span>
+              </div>
+            </div>
+            <div class="product-details">
+              <span class="product-cat-name">Beauty &amp; Fragrance</span>
+              <h3 class="product-title">Royal Amber &amp; Taif Rose Eau de Parfum</h3>
+              <p class="product-desc">Master-crafted oriental fragrance with Taif rose notes, amber resin base, and premium long-lasting silage.</p>
+              
+              <div class="product-spec-pills">
+                <span>100ml EDP</span>
+                <span>Glass Flacon</span>
+                <span>Batch Certified</span>
+              </div>
+
+              <div class="product-purchasing-info">
+                <div class="pricing-col">
+                  <span class="price-label">Availability / Ordering</span>
+                  <span class="price-value">Retail &amp; Wholesale</span>
+                </div>
+                <div class="badge-b2b">B2B Tier Available</div>
+              </div>
+
+              <div class="product-card-actions">
+                <button class="btn btn-outline-dark btn-small view-details-btn" data-product="Royal Amber & Taif Rose Eau de Parfum" data-cat="Beauty & Fragrance" data-desc="Master-crafted oriental fragrance with Taif rose notes, amber resin base, and premium long-lasting silage." data-specs="100ml EDP | French Alcohol Base | Luxury Metallic Cap | Batch Certified">Product Details</button>
+                <button class="btn btn-gold btn-small open-quote-for-item" data-product-name="Royal Amber & Taif Rose EDP">Inquire / Quote</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="product-item" data-category="beauty" data-type="both">
+            <div class="product-image-box">
+              <div class="product-status-tag">In Stock • Confirmed</div>
+              <div class="product-img-bg img-fragrance-2">
+                <span class="product-sku">AMAE-BTY-02</span>
+              </div>
+            </div>
+            <div class="product-details">
+              <span class="product-cat-name">Beauty &amp; Fragrance</span>
+              <h3 class="product-title">Imperial Oud &amp; Velvet Woods Extract</h3>
+              <p class="product-desc">Rare Cambodian oud combined with cedarwood and smoky incense. Sourced for high-end personal use and executive gifts.</p>
+              
+              <div class="product-spec-pills">
+                <span>75ml Extrait</span>
+                <span>Artisan Formula</span>
+                <span>Export Grade</span>
+              </div>
+
+              <div class="product-purchasing-info">
+                <div class="pricing-col">
+                  <span class="price-label">Availability / Ordering</span>
+                  <span class="price-value">Corporate Gifting &amp; Retail</span>
+                </div>
+                <div class="badge-b2b">Pallet Sourcing Ready</div>
+              </div>
+
+              <div class="product-card-actions">
+                <button class="btn btn-outline-dark btn-small view-details-btn" data-product="Imperial Oud & Velvet Woods Extract" data-cat="Beauty & Fragrance" data-desc="Rare Cambodian oud combined with cedarwood and smoky incense. Sourced for high-end personal use and executive gifts." data-specs="75ml Extrait de Parfum | Natural Oud Oil | Custom Packaging Eligible">Product Details</button>
+                <button class="btn btn-gold btn-small open-quote-for-item" data-product-name="Imperial Oud & Velvet Woods Extract">Inquire / Quote</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="product-item" data-category="electronics" data-type="both">
+            <div class="product-image-box">
+              <div class="product-status-tag">In Stock • Confirmed</div>
+              <div class="product-img-bg img-tech-1">
+                <span class="product-sku">AMAE-ELC-01</span>
+              </div>
+            </div>
+            <div class="product-details">
+              <span class="product-cat-name">Electronics &amp; Accessories</span>
+              <h3 class="product-title">Executive Wireless Noise-Cancelling Headset</h3>
+              <p class="product-desc">Advanced active noise cancellation, dual beamforming microphones, and 40-hour battery life for business executives.</p>
+              
+              <div class="product-spec-pills">
+                <span>Bluetooth 5.3</span>
+                <span>ANC Hybrid</span>
+                <span>Fast USB-C</span>
+              </div>
+
+              <div class="product-purchasing-info">
+                <div class="pricing-col">
+                  <span class="price-label">Availability / Ordering</span>
+                  <span class="price-value">Personal &amp; Enterprise Bulk</span>
+                </div>
+                <div class="badge-b2b">MOQ: 20 Units</div>
+              </div>
+
+              <div class="product-card-actions">
+                <button class="btn btn-outline-dark btn-small view-details-btn" data-product="Executive Wireless Noise-Cancelling Headset" data-cat="Electronics & Accessories" data-desc="Advanced active noise cancellation, dual beamforming microphones, and 40-hour battery life for business executives." data-specs="Battery: 40 hrs | Hybrid ANC -38dB | Multipoint Connection | CE/FCC Certified">Product Details</button>
+                <button class="btn btn-gold btn-small open-quote-for-item" data-product-name="Executive Wireless Noise-Cancelling Headset">Inquire / Quote</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 4 -->
+          <article class="product-item" data-category="electronics" data-type="b2b">
+            <div class="product-image-box">
+              <div class="product-status-tag">B2B Sourcing Only</div>
+              <div class="product-img-bg img-tech-2">
+                <span class="product-sku">AMAE-ELC-02</span>
+              </div>
+            </div>
+            <div class="product-details">
+              <span class="product-cat-name">Electronics &amp; Accessories</span>
+              <h3 class="product-title">Multi-Port Enterprise GaN Fast Charger Station</h3>
+              <p class="product-desc">140W GaN technology engineered for modern workspace setups, commercial office deployments, and tech distribution.</p>
+              
+              <div class="product-spec-pills">
+                <span>140W GaN III</span>
+                <span>4x Ports (3C + 1A)</span>
+                <span>Over-Voltage Protection</span>
+              </div>
+
+              <div class="product-purchasing-info">
+                <div class="pricing-col">
+                  <span class="price-label">Availability / Ordering</span>
+                  <span class="price-value">Wholesale &amp; Contract Supply</span>
+                </div>
+                <div class="badge-b2b">MOQ: 50 Units</div>
+              </div>
+
+              <div class="product-card-actions">
+                <button class="btn btn-outline-dark btn-small view-details-btn" data-product="Multi-Port Enterprise GaN Fast Charger Station" data-cat="Electronics & Accessories" data-desc="140W GaN technology engineered for modern workspace setups, commercial office deployments, and tech distribution." data-specs="Max Output: 140W | Power Delivery 3.1 | Universal AC 100-240V | Safety Certified">Product Details</button>
+                <button class="btn btn-gold btn-small open-quote-for-item" data-product-name="Multi-Port Enterprise GaN Fast Charger Station">Inquire / Quote</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="no-results-box" id="noResultsBox" style="display: none;">
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          <h4>No products found matching your filter criteria</h4>
+          <p>Please adjust your search terms or view all categories in the AMAE catalogue.</p>
+          <button class="btn btn-outline-dark btn-small" id="resetFiltersBtn">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- For Business Buyers (Dedicated Enterprise Callout) -->
+    <section class="section b2b-buyers-section">
+      <div class="container">
+        <div class="b2b-buyers-card">
+          <div class="b2b-buyers-grid">
+            <div class="b2b-copy">
+              <span class="section-tag light">Corporate &amp; Wholesale Purchasing</span>
+              <h2 class="section-title text-white">For Business Buyers</h2>
+              <h3 class="b2b-subheading">Need multiple units or a quotation for your company?</h3>
+              <p>
+                Submit a business enquiry with the product, quantity, and destination details. Our commercial desk coordinates directly with manufacturers and verified logistical hubs across Egypt and the Gulf to issue clear commercial quotations.
+              </p>
+              
+              <ul class="b2b-highlights">
+                <li><span>✓</span> Verified commercial invoices &amp; CIF/FOB pricing structures</li>
+                <li><span>✓</span> Custom volume scheduling &amp; multi-destination distribution</li>
+                <li><span>✓</span> Official corporate compliance &amp; batch inspection certificates</li>
+              </ul>
+
+              <div class="b2b-action-wrap">
+                <button class="btn btn-gold" id="openMainB2BQuote">Request a Business Quotation</button>
+                <a href="index.html#sourcing" class="btn btn-outline-white">Explore B2B Solutions</a>
+              </div>
+            </div>
+
+            <div class="b2b-inquiry-preview">
+              <div class="preview-header">
+                <span class="dot-status"></span>
+                <span>Fast Commercial Briefing</span>
+              </div>
+              <p class="preview-lead">Include these parameters in your submission to expedite formal processing:</p>
+              <div class="spec-check-grid">
+                <div class="check-box">
+                  <strong>01. Product SKU / Model</strong>
+                  <span>Exact catalogue name or variant</span>
+                </div>
+                <div class="check-box">
+                  <strong>02. Target Volume</strong>
+                  <span>Trial batch, bulk cartons, or container load</span>
+                </div>
+                <div class="check-box">
+                  <strong>03. Destination Port</strong>
+                  <span>Alexandria, Port Said, Jebel Ali, Riyadh dry port, etc.</span>
+                </div>
+                <div class="check-box">
+                  <strong>04. Delivery Schedule</strong>
+                  <span>Immediate dispatch or staggered intervals</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo">
+            <span class="logo-text">amae</span>
+          </a>
+          <p class="footer-parentage">
+            A commercial brand of <strong>Al Massriya Al Emaratiya for Commercial Agencies, Import &amp; Export</strong>.
+          </p>
+          <div class="footer-markets">
+            <span class="market-title">Active Operating Markets:</span>
+            <div class="market-tags">
+              <span class="market-tag">Egypt</span>
+              <span class="market-sep">•</span>
+              <span class="market-tag">Gulf Region</span>
+              <span class="market-sep">•</span>
+              <span class="market-tag">International Enquiries</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#solutions">Business Solutions</a></li>
+            <li><a href="index.html#sourcing">Wholesale &amp; Quotations</a></li>
+            <li><a href="index.html#suppliers">Supplier Partnerships</a></li>
+            <li><a href="index.html#why-amae">About amae</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Support -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links">
+            <li><a href="#support">Customer Support</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#shipping">Shipping Policy</a></li>
+            <li><a href="#returns">Returns &amp; Refunds</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Business Enquiries -->
+        <div class="footer-col footer-col-enquiry">
+          <h4 class="footer-heading">Business Enquiries</h4>
+          <p class="enquiry-text">
+            For product, sourcing, commercial agency, import, export, and supplier partnership enquiries, contact the amae team through the appropriate enquiry channel.
+          </p>
+          <div class="enquiry-box">
+            <span class="enquiry-badge">Commercial Desk</span>
+            <p>Direct channel for qualified trade, institutional quotations, and distributor dossiers.</p>
+            <button class="btn btn-small btn-gold" id="footerQuoteBtn">Initiate Commercial Inquiry</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> <strong>amae</strong>. All rights reserved.</p>
+        <p class="footer-footnote">Almassriya Alemaratiya for Commercial Agencies, Import &amp; Export.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Details Modal (Product Information) -->
+  <div class="modal-backdrop" id="productDetailModal">
+    <div class="modal-window">
+      <button class="modal-close" id="productDetailClose">&times;</button>
+      <div class="modal-header">
+        <span class="section-tag" id="detailCatTag">Category</span>
+        <h3 id="detailTitle">Product Name</h3>
+        <p id="detailAvailabilityStatus">Approved for publication and available for purchase or enquiry.</p>
+      </div>
+      <div class="product-modal-body">
+        <div class="detail-section">
+          <h4>Description</h4>
+          <p id="detailDesc">Full product details will be rendered here.</p>
+        </div>
+        <div class="detail-section">
+          <h4>Specifications &amp; Parameters</h4>
+          <div class="spec-sheet" id="detailSpecsSheet"></div>
+        </div>
+        <div class="detail-section notice-sheet">
+          <p><strong>Availability Note:</strong> Final quantities, packaging specifications, delivery lead-times, and FOB/CIF rates are confirmed through an official quotation.</p>
+        </div>
+      </div>
+      <div class="modal-actions-bar">
+        <button class="btn btn-gold" id="modalQuoteThisItem">Request Quotation for this Product</button>
+        <button class="btn btn-outline-dark" id="modalDismissBtn">Back to Catalogue</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Business Quotation Modal Form -->
+  <div class="modal-backdrop" id="inquiryModal">
+    <div class="modal-window">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-header">
+        <span class="section-tag">Direct Commercial Desk</span>
+        <h3 id="modalTitle">Request a Business Quotation</h3>
+        <p>Submit your specifications, quantity, and destination details below.</p>
+      </div>
+      <form class="modal-form" id="inquiryForm">
+        <div class="form-group">
+          <label for="fullName">Representative Full Name *</label>
+          <input type="text" id="fullName" required placeholder="e.g. Tarek Mansour" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="companyName">Company / Establishment *</label>
+            <input type="text" id="companyName" required placeholder="e.g. Gulf Trading LLC" />
+          </div>
+          <div class="form-group">
+            <label for="destinationCountry">Destination Port / Country *</label>
+            <input type="text" id="destinationCountry" required placeholder="e.g. Egypt / UAE / Saudi Arabia" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="workEmail">Business Email *</label>
+            <input type="email" id="workEmail" required placeholder="name@company.com" />
+          </div>
+          <div class="form-group">
+            <label for="phoneContact">Direct Phone / WhatsApp *</label>
+            <input type="tel" id="phoneContact" required placeholder="+20 / +971 ..." />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="targetProduct">Product Name / Catalogue Reference</label>
+          <input type="text" id="targetProduct" placeholder="General commercial inquiry or specific SKU" />
+        </div>
+        <div class="form-group">
+          <label for="orderQuantity">Estimated Volume / Quantity Requirement *</label>
+          <input type="text" id="orderQuantity" required placeholder="e.g. 100 Units, 50 Cartons, 1 Full Container" />
+        </div>
+        <div class="form-group">
+          <label for="messageRequirements">Specific Commercial Terms &amp; Inquiries</label>
+          <textarea id="messageRequirements" rows="3" placeholder="Specify packaging options, delivery timeline, Incoterms (CIF, FOB), or technical specifications..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block">Transmit Quotation Request</button>
+      </form>
+      <div class="form-success-message" id="formSuccessMsg">
+        <h4>Quotation Enquiry Submitted</h4>
+        <p>Your procurement specifications have been received by the amae commercial agency desk. An assigned account officer will contact you with terms and confirmation.</p>
+        <button class="btn btn-outline-dark" id="resetModalBtn">Return to Catalogue</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
